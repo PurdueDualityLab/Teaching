@@ -5,15 +5,15 @@ info:
   version: 2.4.1
   description: |-
                 API for ECE 461/Fall 2024/Project Phase 2: A Trustworthy Module Registry"
-                
-                All endpoints have BASELINE or NON-BASELINE listed. Please read through all descriptions before raising questions. 
-                
+
+                All endpoints have BASELINE or NON-BASELINE listed. Please read through all descriptions before raising questions.
+
                 A package ID is unique identifier for Package and Version. (Key idea -> id is unique for all pacakges).
-                
-                Eg. 
-                
+
+                Eg.
+
                     PacakgeName: Alpha, PackageVersion: 1.1.1 -> PackageID: 988645763
-                   
+
                     PacakgeName: Alpha, PackageVersion: 1.3.2 -> PackageID: 357898765
   termsOfService: http://swagger.io/terms/
   contact:
@@ -78,15 +78,15 @@ paths:
           description: Too many packages returned.
       operationId: PackagesList
       summary: Get the packages from the registry. (BASELINE)
-      description: |- 
+      description: |-
         Get any packages fitting the query.
         Search for packages satisfying the indicated query.
 
         If you want to enumerate all packages, provide an array with a single PackageQuery whose name is "*".
 
         The response is paginated; the response header includes the offset to use in the next query.
-        
-        In the Request Body below, "Version" has all the possible inputs. The "Version" cannot be a combinaiton of the different possibilities. 
+
+        In the Request Body below, "Version" has all the possible inputs. The "Version" cannot be a combinaiton of the different possibilities.
     parameters:
     - name: X-Authorization
       description: ""
@@ -98,7 +98,7 @@ paths:
     delete:
       responses:
         "200":
-          description: Registry is reset. 
+          description: Registry is reset.
         401:
           description: You do not have permission to reset the registry.
         403:
@@ -313,7 +313,7 @@ paths:
                         console.log('Failed')
                         process.exit(1)
                         }
-                        
+
           description: Success. Check the ID in the returned metadata for the official
             ID.
         "400":
@@ -327,7 +327,7 @@ paths:
       operationId: PackageCreate
       summary: Upload or Ingest a new package. (BASELINE)
       description: |-
-                  Upload or Ingest a new package. Packages that are uploaded may have the same name but a new version. Refer to the description above to see how an id is formed for a pacakge. 
+                  Upload or Ingest a new package. Packages that are uploaded may have the same name but a new version. Refer to the description above to see how an id is formed for a pacakge.
     parameters:
     - name: X-Authorization
       description: ""
@@ -628,10 +628,10 @@ paths:
                         - "Access control track"
                         - "High assurance track"
                         - "ML inside track"
-        
+
         500:
           description: The system encountered an error while retrieving the student's track information.
-  
+
 
 
 components:
@@ -685,7 +685,7 @@ components:
             See https://docs.npmjs.com/cli/v7/configuring-npm/package-json#homepage.
           type: string
         URL:
-          description: Package URL (for use in public ingest).
+          description: Package URL (for use in public ingest). Note: If the NPM url points to a spefici version, you should use that version's content.
           type: string
         debloat:
           description: If true, remove uneccessary bloat from the package. You may wish to read about tree shaking, minification, etc
@@ -722,7 +722,7 @@ components:
       example: "123567192081501"
       type: string
       pattern: '^[a-zA-Z0-9\-]+$'
-      
+
     PackageCost:
       description: Package Cost is the collection of total cost of package given in terms of total Megabytes (mb) that needs to be downloaded. It consists of a map with key of the map as the package ID and it's value consists of total cost as describe below.
 
@@ -736,22 +736,22 @@ components:
           totalCost:
             type: number
             description: |
-              The total cost of the package. When `dependency` is not set, this should return the standalone cost, 
+              The total cost of the package. When `dependency` is not set, this should return the standalone cost,
               and when it is set, this field should return the sum of the costs of all the dependencies.
-              
+
               For example:
-                
+
                 Package 1 -> Package 2 -> Package 3, Package 4.
-                  
+
                   If dependency = false
                     totalCost = (Package 1).size()
-                  If dependency = true 
+                  If dependency = true
                   totalCost = (Package 1 + Package 2 + Package 3 + Package 4).size()
 
         required:
           - totalCost
 
-        
+
 
 
     PackageRating:
