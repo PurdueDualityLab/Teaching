@@ -143,11 +143,7 @@ paths:
                       ID: underscore
                     data:
                       Content: |
-                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t
-                        ...
-                        ...
-                        ...
-                        fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
+                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t.........fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
                       JSProgram: |
                         if (process.argv.length === 7) {
                         console.log('Success')
@@ -164,11 +160,7 @@ paths:
                       ID: underscore
                     data:
                       Content: |
-                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t
-                        ...
-                        ...
-                        ...
-                        fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
+                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t.........fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
                       URL: https://github.com/jashkenas/underscore
                       JSProgram: |
                         if (process.argv.length === 7) {
@@ -247,11 +239,7 @@ paths:
               ExampleRequestWithContent:
                 value:
                   Content: |
-                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t
-                        ...
-                        ...
-                        ...
-                        fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
+                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t.........fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
                   JSProgram: |
                     if (process.argv.length === 7) {
                     console.log('Success')
@@ -289,11 +277,7 @@ paths:
                       ID: underscore
                     data:
                       Content: |
-                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t
-                        ...
-                        ...
-                        ...
-                        fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
+                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t.........fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
                       URL: https://github.com/jashkenas/underscore
                       JSProgram: |
                         if (process.argv.length === 7) {
@@ -311,11 +295,7 @@ paths:
                       ID: underscore
                     data:
                       Content: |
-                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t
-                        ...
-                        ...
-                        ...
-                        fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
+                        UEsDBAoAAAAAACAfUFkAAAAAAAAAAAAAAAASAAkAdW5kZXJzY29yZS1t.........fQFQAoADBkODIwZWY3MjkyY2RlYzI4ZGQ4YjVkNTY1OTIxYjgxMDBjYTMzOTc=
                       JSProgram: |
                         if (process.argv.length === 7) {
                         console.log('Success')
@@ -605,6 +585,8 @@ components:
             Package contents. This is the zip file uploaded by the user. (Encoded as text using a Base64 encoding).
 
             This will be a zipped version of an npm package's GitHub repository, minus the ".git/" directory." It will, for example, include the "package.json" file that can be used to retrieve the project homepage.
+
+            This string will usually be massive, and we use an abbreviated version of the string for the examples in this spec. To see a full-sized example of a base64 encoded repo, check the example posted on Brightspace under Project -> Phase 2 -> Specification
 
             See https://docs.npmjs.com/cli/v7/configuring-npm/package-json#homepage.
           type: string
