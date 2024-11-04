@@ -16,7 +16,7 @@ index_html = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECE 461: Challenge 1 Server</title>
+    <title>ECE 461: Challenge 1 FileServer</title>
     <style>
         body { font-family: Arial, sans-serif; margin-top: 50px; text-align: center; }
         input[type="text"] { padding: 8px; width: 200px; }
@@ -73,4 +73,4 @@ if __name__ == '__main__':
     if not os.path.exists(DATA_FOLDER):
         os.makedirs(DATA_FOLDER)
     # Start the Flask server
-    app.run(debug=True, host='0.0.0.0', port=8000)
+    app.run(debug=True)
