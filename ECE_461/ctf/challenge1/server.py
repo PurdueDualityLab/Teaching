@@ -16,7 +16,7 @@ index_html = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Server</title>
+    <title>ECE 461: Challenge 1 Server</title>
     <style>
         body { font-family: Arial, sans-serif; margin-top: 50px; text-align: center; }
         input[type="text"] { padding: 8px; width: 200px; }
@@ -24,7 +24,7 @@ index_html = """
     </style>
 </head>
 <body>
-    <h1>Welcome to the File Server</h1>
+    <h1>Welcome to the ECE 461 CTF Challenge: File Server</h1>
     <p>Enter the file name to download:</p>
     <form action="/download" method="post">
         <input type="text" name="filename" placeholder="Enter filename" required>
@@ -63,13 +63,14 @@ def serve_file():
     # except FileNotFoundError:
     #     abort(404, description="File not found.")
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
 # Run the app
 if __name__ == '__main__':
     # Ensure the data folder exists
     if not os.path.exists(DATA_FOLDER):
         os.makedirs(DATA_FOLDER)
     # Start the Flask server
-    app.run(debug=True)
-    # Start the Flask server
-    app.run(debug=True)
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8000)
