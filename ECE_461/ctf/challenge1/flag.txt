@@ -1,0 +1,3 @@
+Congratulations on figuring this out, fill up the Google sheet below with your team's info and show this file to a TA. We will reach out to you soon with goodies about how Autograder works!
+
+https://docs.google.com/spreadsheets/d/1nnFrKNdEuOSwCmorp7pYaLKd0qmXEdhyIfoa176HZP4/edit?usp=sharing

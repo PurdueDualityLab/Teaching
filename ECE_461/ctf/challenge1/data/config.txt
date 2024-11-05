@@ -1,0 +1,15 @@
+# Application Configuration File
+
+[database]
+host = localhost
+port = 5432
+username = admin
+password = secret_password
+
+[logging]
+level = INFO
+output = log.txt
+
+[network]
+timeout = 30
+max_retries = 5

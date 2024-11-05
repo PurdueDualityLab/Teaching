@@ -1,0 +1,5 @@
+- Remember to update dependencies before release.
+- Check if the database backup is completed by end of the week.
+- Send team updates every Friday.
+- Review code standards for the new interns.
+- Plan the upcoming sprint with team leads.

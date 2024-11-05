@@ -1,0 +1,5 @@
+2024-11-04 10:15:32 INFO Starting application
+2024-11-04 10:16:04 WARNING Low memory detected
+2024-11-04 10:18:20 ERROR Database connection failed
+2024-11-04 10:20:45 INFO Retrying database connection
+2024-11-04 10:22:13 INFO Database connected successfully
