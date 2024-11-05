@@ -24,6 +24,7 @@ index_html = """
     </style>
 </head>
 <body>
+    <!-- Ohh good you are reading the source code, you know there are always hint.txt to know more -->
     <h1>Welcome to the ECE 461 CTF Challenge: File Server</h1>
     <p>Enter the file name to download:</p>
     <form action="/download" method="post">
