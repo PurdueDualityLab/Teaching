@@ -1,0 +1,37 @@
+{
+  "id": "cpu_1_yokohama_traces",
+  "source_dataset": "EffiBench/effibench-x",
+  "source_url": "https://onlinejudge.u-aizu.ac.jp/challenges/sources/ICPC/Regional/1444?year=2023",
+  "type": "cpu-bound",
+  "language": "python",
+  "starter_filename": "yokohama_baseline.py",
+  "title": "Yokohama Traces",
+  "description": "Given an N x M grid of uppercase letters, count how many paths spell the word 'YOKOHAMA'. A path is a sequence of adjacent cells (up, down, left, right). Cells may be revisited. Input: N M followed by N lines of M characters. Output: a single integer with the number of traces.",
+  "tests": [
+    {
+      "id": "sample1",
+      "input": "2 4\nYOHA\nOKAM\n",
+      "expected_output": "8\n"
+    },
+    {
+      "id": "sample2",
+      "input": "3 4\nYOKH\nOKHA\nKHAM\n",
+      "expected_output": "0\n"
+    },
+    {
+      "id": "sample3",
+      "input": "3 6\nMAYOHA\nAHOKAM\nMAYOHA\n",
+      "expected_output": "80\n"
+    },
+    {
+      "id": "simple_zero",
+      "input": "1 1\nA\n",
+      "expected_output": "0\n"
+    },
+    {
+      "id": "line_case",
+      "input": "1 8\nYOKOHAMA\n",
+      "expected_output": "2\n"
+    }
+  ]
+}

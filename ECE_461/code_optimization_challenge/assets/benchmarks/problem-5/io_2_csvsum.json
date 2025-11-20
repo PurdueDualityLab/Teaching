@@ -1,0 +1,35 @@
+{
+  "id": "io_2_csvsum",
+  "type": "io-bound",
+  "language": "python",
+  "starter_filename": "csvsum_baseline.py",
+  "title": "CSV Column Sum",
+  "description": "Given N numbers, compute their sum. The baseline repeatedly reparses input and does unnecessary loops, making it IO-heavy.",
+  "tests": [
+    {
+      "id": "basic",
+      "input": "5\n1\n2\n3\n4\n5\n",
+      "expected_output": "15\n"
+    },
+    {
+      "id": "negatives",
+      "input": "4\n-1\n2\n-3\n4\n",
+      "expected_output": "2\n"
+    },
+    {
+      "id": "zeros",
+      "input": "5\n0\n0\n0\n0\n0\n",
+      "expected_output": "0\n"
+    },
+    {
+      "id": "large_values",
+      "input": "3\n1000000\n2000000\n3000000\n",
+      "expected_output": "6000000\n"
+    },
+    {
+      "id": "single_value",
+      "input": "1\n42\n",
+      "expected_output": "42\n"
+    }
+  ]
+}

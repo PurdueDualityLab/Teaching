@@ -1,0 +1,5 @@
+.DS_STORE
+leaderboard.db
+logs
+submissions
+secrets/openai.key

@@ -1,0 +1,35 @@
+{
+  "id": "io_1_wordfreq",
+  "type": "io-bound",
+  "language": "python",
+  "starter_filename": "wordfreq_baseline.py",
+  "title": "Word Frequency Counter",
+  "description": "Given an input text, print the frequency of each word. This baseline is intentionally slow: it repeatedly splits the text and uses naive loops.",
+  "tests": [
+    {
+      "id": "small",
+      "input": "a a a b c c\n",
+      "expected_output": "a 3\nb 1\nc 2\n"
+    },
+    {
+      "id": "short_phrase",
+      "input": "hello world hello test\n",
+      "expected_output": "hello 2\nworld 1\ntest 1\n"
+    },
+    {
+      "id": "single_word",
+      "input": "word\n",
+      "expected_output": "word 1\n"
+    },
+    {
+      "id": "repeated_phrase",
+      "input": "x y x y x y x\n",
+      "expected_output": "x 4\ny 3\n"
+    },
+    {
+      "id": "multi_line",
+      "input": "dog cat dog\ncat cat dog\ndog\n",
+      "expected_output": "dog 4\ncat 3\n"
+    }
+  ]
+}

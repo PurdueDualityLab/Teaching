@@ -1,0 +1,35 @@
+{
+  "id": "io_3_logfilter",
+  "type": "io-bound",
+  "language": "python",
+  "starter_filename": "logfilter_baseline.py",
+  "title": "Slow Log Filter",
+  "description": "Given a keyword and a list of log lines, print only the lines containing the keyword. Implementation is intentionally slow: repeated substring checks, and unnecessary string processing.",
+  "tests": [
+    {
+      "id": "basic",
+      "input": "error\ninfo: ok\nerror: failed\nwarn\nerror: network\n",
+      "expected_output": "error: failed\nerror: network\n"
+    },
+    {
+      "id": "none",
+      "input": "hello\nabc\ndef\nxyz\n",
+      "expected_output": ""
+    },
+    {
+      "id": "multiple_matches",
+      "input": "test\nabc test xyz\ntest here\ntesting\nno\n",
+      "expected_output": "abc test xyz\ntest here\n"
+    },
+    {
+      "id": "case_sensitive",
+      "input": "ERR\nerr lower\nERR upper\nsomethingERRtext\n",
+      "expected_output": "ERR upper\n"
+    },
+    {
+      "id": "prefix_suffix",
+      "input": "id\nid:123\nxxidxx\nline\nanother-id\n",
+      "expected_output": "id:123\nxxidxx\nanother-id\n"
+    }
+  ]
+}

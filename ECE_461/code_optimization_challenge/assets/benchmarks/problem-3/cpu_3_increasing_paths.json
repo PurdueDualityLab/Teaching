@@ -1,0 +1,37 @@
+{
+  "id": "cpu_3_increasing_paths",
+  "source_dataset": "EffiBench/effibench-x",
+  "source_url": "https://leetcode.com/problems/count-increasing-paths-in-a-grid/",
+  "type": "cpu-bound",
+  "language": "python",
+  "starter_filename": "increasing_paths_baseline.py",
+  "title": "Count Increasing Paths",
+  "description": "Given an N×M integer grid, count how many strictly-increasing paths exist. A path may move up, down, left, or right. Paths may be of any length ≥ 1. This baseline implementation uses naive DFS with no memoization and is intentionally slow.",
+  "tests": [
+    {
+      "id": "simple1",
+      "input": "2 2\n1 2\n3 4\n",
+      "expected_output": "10\n"
+    },
+    {
+      "id": "flat_grid",
+      "input": "2 2\n5 5\n5 5\n",
+      "expected_output": "4\n"
+    },
+    {
+      "id": "mixed_case",
+      "input": "3 3\n1 2 3\n2 2 4\n2 5 6\n",
+      "expected_output": "27\n"
+    },
+    {
+      "id": "vertical",
+      "input": "4 1\n1\n2\n3\n4\n",
+      "expected_output": "10\n"
+    },
+    {
+      "id": "horizontal",
+      "input": "1 5\n1 2 1 2 3\n",
+      "expected_output": "10\n"
+    }
+  ]
+}

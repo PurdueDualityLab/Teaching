@@ -1,0 +1,35 @@
+{
+  "id": "cpu_2_max_subarray",
+  "source_dataset": "EffiBench/effibench-x",
+  "source_url": "https://leetcode.com/problems/maximum-subarray/",
+  "type": "cpu-bound",
+  "language": "python",
+  "starter_filename": "max_subarray_baseline.py",
+  "tests": [
+    {
+      "id": "simple_positive",
+      "input": "5\n1 2 3 4 5\n",
+      "expected_output": "15\n"
+    },
+    {
+      "id": "mixed_1",
+      "input": "5\n-2 1 -3 4 -1\n",
+      "expected_output": "4\n"
+    },
+    {
+      "id": "all_negative",
+      "input": "4\n-5 -1 -8 -3\n",
+      "expected_output": "-1\n"
+    },
+    {
+      "id": "mixed_2",
+      "input": "8\n-2 1 -3 4 -1 2 1 -5\n",
+      "expected_output": "6\n"
+    },
+    {
+      "id": "longer_case",
+      "input": "10\n1 -2 3 10 -4 7 2 -5 3 -1\n",
+      "expected_output": "18\n"
+    }
+  ]
+}

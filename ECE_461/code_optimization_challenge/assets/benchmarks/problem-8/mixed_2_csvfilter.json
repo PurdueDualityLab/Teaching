@@ -1,0 +1,35 @@
+{
+  "id": "mixed_2_csvfilter",
+  "type": "mixed",
+  "language": "python",
+  "starter_filename": "mixed_2_csvfilter_baseline.py",
+  "title": "CSV Filter and Char Count",
+  "description": "Reads CSV-like lines and filters based on last column > 10, then counts characters using slow nested loops.",
+  "tests": [
+    {
+      "id": "basic",
+      "input": "a,1\nb,12\nc,20\n",
+      "expected_output": "8\n"
+    },
+    {
+      "id": "none",
+      "input": "x,1\ny,5\nz,9\n",
+      "expected_output": "0\n"
+    },
+    {
+      "id": "mixed",
+      "input": "row,11\nbad,notnum\nval,50\n",
+      "expected_output": "12\n"
+    },
+    {
+      "id": "spaces",
+      "input": "hello, 12\nxx,13\n",
+      "expected_output": "14\n"
+    },
+    {
+      "id": "multi",
+      "input": "a,100\nb,2\nc,30\n",
+      "expected_output": "9\n"
+    }
+  ]
+}

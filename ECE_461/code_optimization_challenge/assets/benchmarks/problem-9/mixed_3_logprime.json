@@ -1,0 +1,35 @@
+{
+  "id": "mixed_3_logprime",
+  "type": "mixed",
+  "language": "python",
+  "starter_filename": "mixed_3_logprime_baseline.py",
+  "title": "Log Number Extraction and Prime Counting",
+  "description": "Extracts numbers from lines slowly and counts all prime numbers using a naive O(n) algorithm.",
+  "tests": [
+    {
+      "id": "basic",
+      "input": "value=2\nnext=3\n",
+      "expected_output": "2\n"
+    },
+    {
+      "id": "none",
+      "input": "x=1\ny=4\nz=8\n",
+      "expected_output": "0\n"
+    },
+    {
+      "id": "mixed_numbers",
+      "input": "error 11 at line 5\ncount=7\nval=12\n",
+      "expected_output": "3\n"
+    },
+    {
+      "id": "multi_line",
+      "input": "nums 13 17\ncheck 22\nlog 29\n",
+      "expected_output": "3\n"
+    },
+    {
+      "id": "embedded",
+      "input": "msg id45 code23\nnum=19\n",
+      "expected_output": "2\n"
+    }
+  ]
+}

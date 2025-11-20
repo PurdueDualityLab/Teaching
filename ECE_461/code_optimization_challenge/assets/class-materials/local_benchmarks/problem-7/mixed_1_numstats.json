@@ -1,0 +1,35 @@
+{
+  "id": "mixed_1_numstats",
+  "type": "mixed",
+  "language": "python",
+  "starter_filename": "mixed_1_numstats_baseline.py",
+  "title": "Number Stats with Bubble Sort",
+  "description": "Reads many numbers, parses them slowly, sorts with bubble sort, and computes stats using repeated loops.",
+  "tests": [
+    {
+      "id": "basic",
+      "input": "5 4 3 2 1\n",
+      "expected_output": "1 5 3\n"
+    },
+    {
+      "id": "negatives",
+      "input": "-1 -5 3 10 0\n",
+      "expected_output": "-5 10 1\n"
+    },
+    {
+      "id": "mixed_lines",
+      "input": "3 2\n1\n5 9 -1\n",
+      "expected_output": "-1 9 3\n"
+    },
+    {
+      "id": "all_equal",
+      "input": "7 7 7 7 7\n",
+      "expected_output": "7 7 7\n"
+    },
+    {
+      "id": "one_value",
+      "input": "42\n",
+      "expected_output": "42 42 42\n"
+    }
+  ]
+}
